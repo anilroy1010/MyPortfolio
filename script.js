@@ -13,10 +13,10 @@ function changeBackGroundColor(color){
 
 }
 function setupButton(){
-    var button=getElementById(colorButton);
+    var button=getElementById('colorButton');
     if(button){
         button.addEventListener('click', function(){
-            changeBackGroundColor('lightblue');
+            changeBackGroundColor('red');
         })
 
     }
