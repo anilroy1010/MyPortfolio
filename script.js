@@ -6,3 +6,18 @@ function h1Touppercase() {
     
 }
 document.addEventListener('DOMContentLoaded', h1Touppercase);
+function changeBackGroundColor(color){
+
+    document.body.style.backgroundColor=color;
+
+}
+function setupButton(){
+    var button=getElementById(colorButton);
+    if(button){
+        button.addEventListener('click', function(){
+            changeBackGroundColor('lightblue');
+        })
+
+    }
+}
+document.addEventListener('DOMContentLoaded', setupButton);
