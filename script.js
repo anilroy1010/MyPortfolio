@@ -6,6 +6,7 @@ function h1Touppercase() {
     
 }
 document.addEventListener('DOMContentLoaded', h1Touppercase);
+
 function changeBackGroundColor(color){
 
     document.body.style.backgroundColor=color;
