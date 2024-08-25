@@ -6,6 +6,7 @@ function h1Touppercase() {
     
 }
 document.addEventListener('DOMContentLoaded', h1Touppercase);
+//background Color change
 
 function changeBackGroundColor(color){
 
@@ -13,12 +14,22 @@ function changeBackGroundColor(color){
 
 }
 function setupButton(){
-    var button=getElementById('colorButton');
+
+    var button=document.getElementById('colorButton');
     if(button){
+     
         button.addEventListener('click', function(){
-            changeBackGroundColor('red');
-        })
+            changeBackGroundColor('lightblue');
+        });
+
+      
+        button.addEventListener('dblclick',function(){
+                changeBackGroundColor('white');
+    
+       });
+      
 
     }
+  
 }
 document.addEventListener('DOMContentLoaded', setupButton);
